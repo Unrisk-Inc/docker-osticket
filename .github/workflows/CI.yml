@@ -1,4 +1,4 @@
-name: "Build Unri.sk Pelican NGINX Image"
+name: "Build OSTicket Docker Image"
 
 on:
   push:
@@ -20,9 +20,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          submodules: 'recursive'
-          token: ${{ secrets.GH_ACCESS_TOKEN}}
 
       - name: Log into registry ${{ env.REGISTRY }}
         if: github.event_name != 'pull_request'
