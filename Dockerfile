@@ -61,8 +61,8 @@ RUN set -ex; \
     rm -rf /tmp/pear /var/cache/apk/*
 # DO NOT FORGET TO CHECK THE LANGUAGE PACK DOWNLOAD URL BELOW
 # DO NOT FORGET TO UPDATE "image-version" FILE
-ENV OSTICKET_VERSION=1.16.1 \
-    OSTICKET_SHA256SUM=4cfb6a297b48f551b0988a7df72448fe7ec22ee38e4023fafc19ead41fb76b38
+ENV OSTICKET_VERSION=1.16.3 \
+    OSTICKET_SHA256SUM=7d9c1ae7663e66d189b70d29fe02844d5ec2324a0f4cca545205a55f29ff72aa
 RUN --mount=type=bind,source=osticket-glob-brace.patch,target=/tmp/osticket-glob-brace.patch \
     \
     set -ex; \

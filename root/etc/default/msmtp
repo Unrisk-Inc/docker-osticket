@@ -9,7 +9,7 @@ defaults
 
 # OSTicket account
 account osticket
-        domain %OSTICKET_DOMAIN%
+        domain @OSTICKET_DOMAIN@
         protocol smtp
         host %SMTP_HOSTNAME%
         tls %SMTP_TLS%
