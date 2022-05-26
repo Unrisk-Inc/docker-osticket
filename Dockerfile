@@ -79,7 +79,7 @@ v${OSTICKET_VERSION}/osTicket-v${OSTICKET_VERSION}.zip; \
     mkdir /usr/local/src; \
     mv upload /usr/local/src/osticket; \
     # Patch usage of GLOB_BRACE
-    patch -d /usr/local/src/osticket -Np1 -i /tmp/osticket-glob-brace.patch; \
+    #patch -d /usr/local/src/osticket -Np1 -i /tmp/osticket-glob-brace.patch; \
     # Hard link the sources to the public directory
     cp -al /usr/local/src/osticket/. /var/www/html; \
     # Hide setup
